@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.logo span:first-child {
+  color: red;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 900;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(238, 255, 0);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  font-weight: 200;
+}
+
+.buttons button {
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  background-color: red;
+  border: 2px solid red;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+
+.login-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url('Rectangle\ 2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.banner-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 30px;
+  background-color: gold;
+  color: #000;
+  border: 2px solid gold;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.banner-button:hover {
+  background-color: transparent;
+  color: gold;
+}
+
+.banner-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.top-container {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+.welcome {
+  font-size: 3em;
+}
+
+.welcome span:first-child {
+  color: red;
+}
+
+h2 {
+  color: gold;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  padding-top: 50px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  height: 70%;
+}
+
+.footerh2 {
+  color: #fff;
+}
+
+.footerh2 span:first-child {
+  color: red;
+}
+
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul span {
+  color: #ffffff;
+  display: contents;
+
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+footer img {
+  height: 130px;
+}
+
+footer .content-wrap {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
